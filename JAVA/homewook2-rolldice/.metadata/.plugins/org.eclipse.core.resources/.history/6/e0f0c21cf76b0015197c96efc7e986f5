@@ -1,0 +1,10 @@
+package rolldice;
+
+public class rolldice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
