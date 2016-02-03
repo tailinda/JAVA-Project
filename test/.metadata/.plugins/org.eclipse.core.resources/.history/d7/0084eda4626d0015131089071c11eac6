@@ -1,0 +1,51 @@
+package exp1;
+
+import java.util.Scanner;
+
+public class exp2 {
+
+    public static void Sort(int[] array)
+	    {
+	        for (int i = array.length - 1; i > 0; --i)
+	        {
+	            boolean swapped = false;
+	            for (int j = 0; j < i; ++j)
+	                if (array[j] > array[j + 1])
+	                {
+	                    Swap(array, j, j + 1);
+	                    swapped = true;
+	                }
+	            if(!swapped)
+	                break;
+	        }
+	    }
+	 
+    private static void Swap(int[] array, int indexA, int indexB)
+	    {
+	        int tmp = array[indexA];
+	        array[indexA] = array[indexB];
+	        array[indexB] = tmp;
+	    }
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double[] number = new double[4];
+		number[0] = 50;
+		number[1] = 200;
+		number[2] = 4;
+		number[3] = 16;
+		
+		int i;
+		for (i=0;i<number.length;i++){
+			
+			System.out.print("­ì©l°}¦C:");
+			System.out.println("["+number[i]+"]");	
+		
+		}
+		
+	
+		
+	}
+
+}
